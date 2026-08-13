@@ -24,3 +24,15 @@ Move it onto your PATH (optional, but makes it feel brew-like)
 ```bash
 sudo mv kubestr /usr/local/bin/kubestr
 ```
+
+---
+
+List storageclasses
+```bash
+kubectl get storageclasses.storage.k8s.io
+```
+
+test the storage class:
+```bash
+kubestr fio -s local-path
+```
