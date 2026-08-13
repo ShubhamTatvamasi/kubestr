@@ -36,3 +36,7 @@ test the storage class:
 ```bash
 kubestr fio -s local-path
 ```
+
+```bash
+kubestr fio -s seaweedfs-storage
+```
