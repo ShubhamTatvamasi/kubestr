@@ -1,20 +1,21 @@
 # kubestr
 
+move to tmp directory
 ```bash
 cd /tmp
 ```
 
-
+download
 ```bash
 wget https://github.com/kastenhq/kubestr/releases/download/v0.4.49/kubestr_0.4.49_MacOS_arm64.tar.gz
 ```
 
+extract
 ```bash
 tar -xzf kubestr_0.4.49_MacOS_arm64.tar.gz
 ```
 
-
-# Make executable
+Make executable
 ```bash
 chmod +x kubestr
 ```
