@@ -34,9 +34,11 @@ kubectl get storageclasses.storage.k8s.io
 
 test the storage class:
 ```bash
-kubestr fio -s local-path
+kubestr fio -s local-path \
+  --image ghcr.io/kastenhq/kubestr:master
 ```
 
 ```bash
-kubestr fio -s seaweedfs-storage
+kubestr fio -s seaweedfs-storage \
+  --image ghcr.io/kastenhq/kubestr:master
 ```
