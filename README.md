@@ -5,38 +5,44 @@ List storageclasses
 kubectl get storageclasses.storage.k8s.io
 ```
 
-test the storage class:
+test the storage class with default-fio:
 ```bash
-kubestr fio -s local-path \
+kubestr fio \
+  --storageclass local-path \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
 test with a custom fio file:
 ```bash
-kubestr fio -s local-path \
-  -f k8s-storage.fio \
+kubestr fio \
+  --storageclass local-path \
+  --fiofile k8s-storage.fio \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
 ---
 
 ```bash
-kubestr fio -s seaweedfs-storage \
+kubestr fio \
+  --storageclass seaweedfs-storage \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
 ```bash
-kubestr fio -s vast \
+kubestr fio \
+  --storageclass vast \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
 ```bash
-kubestr fio -s ceph-block \
+kubestr fio \
+  --storageclass ceph-block \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
 ```bash
-kubestr fio -s ceph-filesystem \
+kubestr fio \
+  --storageclass ceph-filesystem \
   --image ghcr.io/kastenhq/kubestr:master
 ```
 
