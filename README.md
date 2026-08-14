@@ -42,3 +42,21 @@ kubestr fio -s local-path \
 kubestr fio -s seaweedfs-storage \
   --image ghcr.io/kastenhq/kubestr:master
 ```
+
+```bash
+kubestr fio -s vast \
+  --image ghcr.io/kastenhq/kubestr:master
+```
+
+```bash
+kubestr fio -s ceph-block \
+  --image ghcr.io/kastenhq/kubestr:master
+```
+
+```bash
+kubestr fio -s ceph-filesystem \
+  --image ghcr.io/kastenhq/kubestr:master
+```
+
+
+
