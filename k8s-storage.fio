@@ -8,44 +8,53 @@ group_reporting=1
 randrepeat=0
 verify=0
 gtod_reduce=1
-size=1G
 
 # Sequential write throughput
 [seq-write]
+name=seq-write
 rw=write
 bs=1M
 iodepth=16
 numjobs=1
+size=1G
 
 # Sequential read throughput
 [seq-read]
+name=seq-read
 rw=read
 bs=1M
 iodepth=16
 numjobs=1
+size=1G
 stonewall=1
 
 # Random write IOPS/latency
 [rand-write]
+name=rand-write
 rw=randwrite
 bs=4k
 iodepth=32
 numjobs=4
+size=1G
 stonewall=1
 
 # Random read IOPS/latency
 [rand-read]
+name=rand-read
 rw=randread
 bs=4k
 iodepth=32
 numjobs=4
+size=1G
 stonewall=1
 
 # Mixed random read/write (70/30), simulates typical DB workload
 [rand-rw-mix]
+name=rand-rw-mix
 rw=randrw
 rwmixread=70
 bs=4k
 iodepth=32
 numjobs=4
+size=1G
 stonewall=1
