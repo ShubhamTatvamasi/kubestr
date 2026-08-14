@@ -1,14 +1,14 @@
 [global]
 ioengine=libaio
 direct=1
-runtime=60
+runtime=20
 time_based=1
-ramp_time=5
+ramp_time=2
 group_reporting=1
 randrepeat=0
 verify=0
 gtod_reduce=1
-size=2G
+size=1G
 
 # Sequential write throughput
 [seq-write]
