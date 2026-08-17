@@ -9,9 +9,10 @@ test the storage class with default-fio:
 ```bash
 kubestr fio \
   --storageclass local-path \
-  --fiofile k8s-storage.fio \
   --image ghcr.io/kastenhq/kubestr:master
 ```
+
+---
 
 test with a custom fio file:
 ```bash
@@ -20,8 +21,6 @@ kubestr fio \
   --fiofile k8s-storage.fio \
   --image ghcr.io/kastenhq/kubestr:master
 ```
-
----
 
 ```bash
 kubestr fio \
